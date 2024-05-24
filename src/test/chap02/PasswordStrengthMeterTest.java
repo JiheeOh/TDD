@@ -1,4 +1,4 @@
-package chap02;
+package test.chap02;
 
 import org.junit.jupiter.api.Test;
 

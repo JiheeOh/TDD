@@ -1,4 +1,4 @@
-package chap03;
+package test.chap03;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
