@@ -1,4 +1,4 @@
-package test.java.chap02;
+package java.chap02;
 
 public class PasswordStrengthMeter {
     public PasswordStrength meter(String s) {

@@ -1,4 +1,4 @@
-package test.java.chap03;
+package chap03;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

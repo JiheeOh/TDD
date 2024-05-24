@@ -1,12 +1,16 @@
-package test.java.chap02;
+package chap02;
 
 import org.junit.jupiter.api.Test;
+
+import java.chap02.PasswordStrength;
+import java.chap02.PasswordStrengthMeter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class PasswordStrengthMeterTest {
-    private PasswordStrengthMeter meter = new PasswordStrengthMeter();
+
+    private final PasswordStrengthMeter meter = new PasswordStrengthMeter();
 
     private void assertStrength(String password, PasswordStrength expStr) {
         PasswordStrength result = meter.meter(password);
@@ -45,7 +49,7 @@ public class PasswordStrengthMeterTest {
 
     @Test
     void meetsOnlyLengthCriteria_Then_Weak(){
-        assertStrength("abdefghi",PasswordStrength.WEAK);
+        assertStrength("abdefghi", PasswordStrength.WEAK);
     }
 
     @Test
