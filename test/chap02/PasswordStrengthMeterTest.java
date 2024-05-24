@@ -2,8 +2,8 @@ package chap02;
 
 import org.junit.jupiter.api.Test;
 
-import java.chap02.PasswordStrength;
-import java.chap02.PasswordStrengthMeter;
+import chap02.chap02.PasswordStrength;
+import chap02.chap02.PasswordStrengthMeter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
