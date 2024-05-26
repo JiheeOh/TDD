@@ -1,7 +1,5 @@
 package main.chap07.stub;
 
-import main.chap07.WeakPasswordChecker;
-
 public class StubWeakPasswordChecker implements WeakPasswordChecker {
     /**
      * Stub

@@ -1,7 +1,6 @@
 package main.chap07.fake;
 
 import main.chap07.User;
-import main.chap07.UserRepository;
 
 import java.util.HashMap;
 import java.util.Map;
