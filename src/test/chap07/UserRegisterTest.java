@@ -40,7 +40,7 @@ public class UserRegisterTest {
     @Test
     void dupId() {
         // 이미 같은 ID가 존재하는 상황 만들기
-        fakeRepo.save(new User("id", "pw1", "eamil@email.com"));
+        fakeRepo.save(new User("id", "pw1", "email@email.com"));
 
         assertThrows(DupIdException.class, () -> {
             userRegister.register("id", "pw2", "email");
