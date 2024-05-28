@@ -1,19 +1,20 @@
 package main.chap07.quiz;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class FakeHistoryRepository implements HistoryRepository{
-    private List<History> histories = new ArrayList<>();
+    private Map<Integer,History> histories = new HashMap<>();
     @Override
     public void save(History history) {
-        histories.add(history);
+        histories.put(history.getId(), history);
 
     }
 
     @Override
     public History findbyId(int id) {
-        List<History> historyList = histories.stream().filter(x->x.getId() ==id).toList();
-        return historyList.get(0);
+        return histories.get(id);
     }
 }
