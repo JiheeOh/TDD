@@ -50,6 +50,11 @@ public class UserRegisterMockTest {
                 ,()-> { userRegister.register("id","pw","email");
         });
 
+        assertThrows(
+                WeakPassWordException.class
+                ,()-> { userRegister.register("id","pwt","email");
+                });
+
     }
 
     @DisplayName("회원 가입 시 암호 검사 수행")
